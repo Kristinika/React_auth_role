@@ -21,27 +21,29 @@ Auth Roles Demo (React + JWT + Roles)
 
 📂 Структура проекта
 
-src/
-├─ api/
-│ └─ auth.ts # мок-логика логина, тестовые пользователи
-├─ components/
-│ ├─ Navbar.tsx # верхняя навигация (зависит от роли)
-│ └─ ProtectedRoute.tsx # защищённый роут + проверка ролей
-├─ context/
-│ └─ AuthContext.tsx # хранение user/token, login/logout
-├─ pages/
-│ ├─ Login.tsx
-│ ├─ Dashboard.tsx
-│ ├─ AdminPage.tsx
-│ ├─ ManagerPage.tsx
-│ ├─ ClientPage.tsx
-│ └─ SupportPage.tsx
-├─ types/
-│ └─ auth.d.ts # типы User, UserRole, AuthResponse
-├─ routes.tsx # таблица маршрутов приложения
-├─ App.tsx # оболочка, Router + AuthProvider + layout
-├─ index.css # глобальные стили
-└─ index.tsx # точка входа
+| Путь                                | Тип     | Описание                                 |
+| ----------------------------------- | ------- | ---------------------------------------- |
+| `src/`                              | 🗂️ dir  | Исходники                                |
+| `src/api/`                          | 🗂️ dir  | API-слой                                 |
+| `src/api/auth.ts`                   | 📄 file | Мок-логика логина, тестовые пользователи |
+| `src/components/`                   | 🗂️ dir  | Переиспользуемые компоненты              |
+| `src/components/Navbar.tsx`         | 📄 file | Верхняя навигация (зависит от роли)      |
+| `src/components/ProtectedRoute.tsx` | 📄 file | Защищённый роут + проверка ролей         |
+| `src/context/`                      | 🗂️ dir  | Контекст приложения                      |
+| `src/context/AuthContext.tsx`       | 📄 file | Хранение user/token, login/logout        |
+| `src/pages/`                        | 🗂️ dir  | Страницы                                 |
+| `src/pages/Login.tsx`               | 📄 file | Страница входа                           |
+| `src/pages/Dashboard.tsx`           | 📄 file | Дашборд                                  |
+| `src/pages/AdminPage.tsx`           | 📄 file | Раздел администратора                    |
+| `src/pages/ManagerPage.tsx`         | 📄 file | Раздел менеджера                         |
+| `src/pages/ClientPage.tsx`          | 📄 file | Раздел клиента                           |
+| `src/pages/SupportPage.tsx`         | 📄 file | Раздел поддержки                         |
+| `src/types/`                        | 🗂️ dir  | Типы/интерфейсы                          |
+| `src/types/auth.d.ts`               | 📄 file | Типы: `User`, `UserRole`, `AuthResponse` |
+| `src/routes.tsx`                    | 📄 file | Таблица маршрутов приложения             |
+| `src/App.tsx`                       | 📄 file | Оболочка: Router + AuthProvider + layout |
+| `src/index.css`                     | 📄 file | Глобальные стили                         |
+| `src/index.tsx`                     | 📄 file | Точка входа                              |
 
 🧭 Требования
 
